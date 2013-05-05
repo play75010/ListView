@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>JQM + Phonegap test</title> 
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-startup-image" href="appimg/calm2.png" >
+    <script src='./extlibs/jquery-2.0.0.min.js'></script>
+    <link rel='stylesheet' href='./extlibs/jquery.mobile-1.3.1.min.css'/>
+    <link rel='stylesheet' href='./appcss/test.css' />
+  </head> 
+
+  <body>
+    <input type='hidden' id='lang' name='lang' value='en'/>
+    <input type='hidden' id='lon' name='lon' value='0'/>
+    <input type='hidden' id='lat' name='lat' value='0'/>
+
+    <div data-role='page' id='page1' data-theme='c'>
+      <div data-role='header' data-theme='b' id='head'>
+	<h1 id='h1'>Test</h1>
+      </div>
+      <ul id='addedlist' data-role='listview'></ul>
+    </div>
+
+    <div data-role="page" id="event" data-theme="b" data-add-back-btn="true">
+      <div data-role="header" data-theme='b'> 
+	<h1></h1>
+      </div>
+      <div data-role="content">
+	<table>
+	  <tr>
+	    <td valign='top'><img id='topimg' src="appimg/noeventpic.png" width='100' height='100'/></td>
+	    <td id='toptitle'>&nbsp;</td>
+	</tr>
+	</table>
+	<br/>
+	<ul id="listopt" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+	  <li id='place'></li>
+	  <li id='date'></li>
+	</ul>
+	<p id='desce'>
+	</p>
+	<div id='hides'>
+	</div>
+      </div>
+    </div>
+    <script src='./extlibs/cordova-2.6.0.js'></script>
+    <script src='./appjs/test.js'></script>
+    <script src='./extlibs/jquery.mobile-1.3.1.min.js'></script>
+  </body>
+</html>
+
